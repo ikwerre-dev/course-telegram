@@ -2,6 +2,7 @@ import Link from 'next/link'
 import CryptoTicker from '@/components/CryptoTicker'
 import Testimonials from '@/components/Testimonials'
 import Stats from '@/components/Stats'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -228,14 +229,16 @@ export default function Home() {
               }
             ].map((story, index) => (
               <div key={index} className="group relative p-6 rounded-2xl bg-dark-light/20 border border-gold/10 hover:border-gold/30 transition-all duration-300">
-                <img
+                <Image
+                  width={20}
+                  height={20}
                   src={story.image}
                   alt={story.name}
                   className="w-20 h-20 rounded-full mb-4 object-cover mx-auto"
                 />
                 <h3 className="text-xl font-bold mb-2 text-gold">{story.name}</h3>
                 <p className="text-sm text-gold/70 mb-4">{story.role}</p>
-                <p className="text-gray-400 italic">"{story.story}"</p>
+                <p className="text-gray-400 italic">&quot;{story.story}&quot;</p>
               </div>
             ))}
           </div>
@@ -252,7 +255,7 @@ export default function Home() {
                 Transform Your Financial Future
               </h2>
               <p className="text-xl text-gray-300 leading-relaxed">
-                Our comprehensive program is designed to give you the tools, knowledge, and confidence needed to build lasting wealth. With expert guidance and proven strategies, you'll learn to navigate the complex world of finance and investment.
+                Our comprehensive program is designed to give you the tools, knowledge, and confidence needed to build lasting wealth. With expert guidance and proven strategies, you&apos;ll learn to navigate the complex world of finance and investment.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
                 <div className="flex items-center gap-3">
@@ -267,7 +270,11 @@ export default function Home() {
             </div>
             <div className="order-1 lg:order-2 relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-gold-light/20 to-gold-dark/20 rounded-2xl blur-2xl group-hover:opacity-75 transition duration-500 opacity-50"></div>
-              <img
+              <Image
+                width={1000}
+                height={1000}
+                layout="responsive"
+                data-src="/image.png"
                 src="/image.png"
                 alt="Financial Success Vision"
                 className="relative rounded-2xl w-full object-cover shadow-2xl transform group-hover:scale-[1.02] transition duration-500"
@@ -287,7 +294,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/pattern.svg')] bg-center opacity-5"></div>
         <div className="max-w-4xl mx-auto text-center px-4 relative">
           <h2 className="text-5xl font-bold mb-8 bg-gradient-gold">
-            Limited Time Offer - Don't Miss Out!
+            Limited Time Offer - Don&apos;t Miss Out!
           </h2>
           <p className="text-2xl mb-12 text-gray-300">
             Join now and save 90% on your enrollment
