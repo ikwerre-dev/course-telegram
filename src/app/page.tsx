@@ -41,15 +41,18 @@ export default function Home() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-              <Link
-                href="https://t.me/+9Jq-Eb18NuQ1MDI8"
-                className="group relative inline-flex items-center px-8 md:px-12 py-4 md:py-5 overflow-hidden text-base md:text-lg font-bold text-dark-darker transition-all duration-300 bg-gradient-to-r from-gold-light to-gold-dark rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.3)]"
-              >
-                Join Now
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
+              <div className="flex flex-col sm:flex-row cursor-pointer  items-center justify-center not-hover:animate-bounce">
+                <Link
+                  href="https://t.me/+9Jq-Eb18NuQ1MDI8"
+                  className="group relative inline-flex items-center px-8 md:px-12 py-4 md:py-5 overflow-hidden text-base md:text-lg font-bold text-dark-darker transition-all duration-300 bg-gradient-to-r from-gold-light to-gold-dark rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,215,0,0.3)] animate-custom-bounce"
+                >
+
+                  Join Now
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-2 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
               <Link href={'https://t.me/+9Jq-Eb18NuQ1MDI8'} className="text-gold border border-gold/30 rounded-full px-6 md:px-8 py-4 md:py-5 hover:bg-gold/10 transition-all duration-300 text-base md:text-lg w-full sm:w-auto">
                 Learn More
               </Link>
